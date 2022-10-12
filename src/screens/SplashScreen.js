@@ -26,14 +26,12 @@ const SplashScreen = ({navigation}) => {
                     if (len > 0) {
                       let res1 = results.rows.item(0);
                       console.log('results ', res.email, res.password);
-                      // navigation.navigate('Home', {userDetails: res.email});
                       navigation.reset({
                         index: 0,
                         routes: [{name: 'Home', params: {userDetails: res1}}],
                       });
                     } else {
                       console.log('No user found');
-                      // HybridToast('No user found');
                       navigation.reset({
                         index: 0,
                         routes: [{name: 'Login'}],
