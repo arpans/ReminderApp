@@ -11,7 +11,6 @@ import {
   TextInput,
   TouchableOpacity,
   Platform,
-  Alert,
 } from 'react-native';
 import pageStyles from '../styles/login.style';
 import {Color, CommonStyles, DeviceInfo} from '../utils';
